@@ -1,9 +1,14 @@
-/*
- * echo2.c
+/******************************************************************************
  *
- *  Created on: Aug 8, 2022
- *      Author: Ola Badr
- */
+ * Module: MC2
+ *
+ * File Name: echo2.c
+ *
+ * Description: echo application MC2
+ *
+ * Author: Ola Badr
+ *
+ *******************************************************************************/
 #include <stdio.h>
 #include "std_types.h"
 #include "common_macros.h"

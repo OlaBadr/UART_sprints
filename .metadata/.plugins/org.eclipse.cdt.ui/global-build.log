@@ -1,29 +1,31 @@
-21:55:51 **** Build of configuration Debug for project echo2 ****
+11:15:55 **** Incremental Build of configuration Debug for project echo1 ****
 make all 
-Building file: ../echo2.c
+Building file: ../timer0.c
 Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"echo2.d" -MT"echo2.o" -c -o "echo2.o" "../echo2.c"
-Finished building: ../echo2.c
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+../timer0.c: In function 'Timer0_setCallBack':
+../timer0.c:65: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer0.c
  
-Building target: echo2.elf
+Building target: echo1.elf
 Invoking: AVR C Linker
-avr-gcc -Wl,-Map,echo2.map -mmcu=atmega16 -o "echo2.elf"  ./echo2.o   
-Finished building target: echo2.elf
+avr-gcc -Wl,-Map,echo1.map -mmcu=atmega16 -o "echo1.elf"  ./echo1.o ./gpio.o ./timer0.o ./usart.o   
+Finished building target: echo1.elf
  
 Invoking: AVR Create Extended Listing
-avr-objdump -h -S echo2.elf  >"echo2.lss"
-Finished building: echo2.lss
+avr-objdump -h -S echo1.elf  >"echo1.lss"
+Finished building: echo1.lss
  
 Invoking: Print Size
-avr-size --format=avr --mcu=atmega16 echo2.elf
+avr-size --format=avr --mcu=atmega16 echo1.elf
 AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:     122 bytes (0.7% Full)
+Program:    4892 bytes (29.9% Full)
 (.text + .data + .bootloader)
 
-Data:          0 bytes (0.0% Full)
+Data:         10 bytes (1.0% Full)
 (.data + .bss + .noinit)
 
 

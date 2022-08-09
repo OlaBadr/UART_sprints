@@ -6,16 +6,19 @@
 C_SRCS += \
 ../echo1.c \
 ../gpio.c \
+../timer0.c \
 ../usart.c 
 
 OBJS += \
 ./echo1.o \
 ./gpio.o \
+./timer0.o \
 ./usart.o 
 
 C_DEPS += \
 ./echo1.d \
 ./gpio.d \
+./timer0.d \
 ./usart.d 
 
 

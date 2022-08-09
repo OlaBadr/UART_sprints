@@ -1,14 +1,9 @@
-/******************************************************************************
+/*
+ * echo1.c
  *
- * Module: MC1
- *
- * File Name: echo1.c
- *
- * Description: echo application MC1
- *
- * Author: Ola Badr
- *
- *******************************************************************************/
+ *  Created on: Aug 8, 2022
+ *      Author: Ola Badr
+ */
 #include <stdio.h>
 #include <util/delay.h>
 #include "std_types.h"
