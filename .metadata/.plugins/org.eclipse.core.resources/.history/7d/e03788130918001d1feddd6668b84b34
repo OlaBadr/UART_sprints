@@ -29,10 +29,9 @@ int main ()
 
 	while(1)
 	{
-		SWUART_recieve(&recieved_data);
-		_delay_ms(100);
-		sent_data = recieved_data;
-		SWUART_send(recieved_data);
+		SWUART_recieve(&data);
+
+
 
 	}
 

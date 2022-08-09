@@ -1,11 +1,28 @@
-11:15:55 **** Incremental Build of configuration Debug for project echo1 ****
+19:31:22 **** Build of configuration Debug for project echo1 ****
 make all 
+Building file: ../echo1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"echo1.d" -MT"echo1.o" -c -o "echo1.o" "../echo1.c"
+In file included from ../echo1.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../echo1.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
 Building file: ../timer0.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
 ../timer0.c: In function 'Timer0_setCallBack':
 ../timer0.c:65: warning: function return types not compatible due to 'volatile'
 Finished building: ../timer0.c
+ 
+Building file: ../usart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"usart.d" -MT"usart.o" -c -o "usart.o" "../usart.c"
+Finished building: ../usart.c
  
 Building target: echo1.elf
 Invoking: AVR C Linker
@@ -22,7 +39,7 @@ AVR Memory Usage
 ----------------
 Device: atmega16
 
-Program:    4892 bytes (29.9% Full)
+Program:    5408 bytes (33.0% Full)
 (.text + .data + .bootloader)
 
 Data:         10 bytes (1.0% Full)

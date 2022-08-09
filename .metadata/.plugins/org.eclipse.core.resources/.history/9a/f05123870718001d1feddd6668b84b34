@@ -4,7 +4,7 @@
  *
  * File Name: echo2.c
  *
- * Description: echo application MC2 (Echo Back)
+ * Description: echo application MC2
  *
  * Author: Ola Badr
  *
@@ -20,19 +20,14 @@
 
 int main ()
 {
-	SWUART_init(9600);
+
 	/*add delay before starting the communication*/
 	_delay_ms(500);
 
-	uint8_t recieved_data;
-	uint8_t sent_data;
-
 	while(1)
 	{
-		SWUART_recieve(&recieved_data);
-		_delay_ms(100);
-		sent_data = recieved_data;
-		SWUART_send(recieved_data);
+
+
 
 	}
 

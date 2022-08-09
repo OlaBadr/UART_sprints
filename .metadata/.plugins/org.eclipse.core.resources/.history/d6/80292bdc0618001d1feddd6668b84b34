@@ -13,19 +13,11 @@
 
 
 
-/*Description:
- * initializing timer0 in overflow mode with 1024 pre-scaler
- * */
+
 void Timer0_init(void);
 
-/*Description:
- * set the function to be called when an interrupt occurs
- */
 void Timer0_setCallBack(void(*a_ptr)(void));
 
-/*Description:
- * Stop timer
- */
 void Timer0_DeInit(void);
 
 
